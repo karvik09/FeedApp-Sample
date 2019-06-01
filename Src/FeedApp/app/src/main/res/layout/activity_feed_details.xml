@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/offlineTag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:background="@android:color/holo_red_light"
+                android:text="You are not connected to internet."
+                android:textColor="@android:color/white"/>
+            <include
+                layout="@layout/header"/>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+                        <ImageView
+                            android:id="@+id/feedImage"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"/>
+                        <TextView
+                            android:padding="16dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="14sp"
+                            android:id="@+id/feedText"
+                            android:text="jndkjewnfkjewnfjnfk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Like"
+                            android:id="@+id/likeText"
+                            android:paddingStart="12dp"
+                            android:textSize="16sp"
+                            android:background="@drawable/like_btn_bg"
+                            android:drawableLeft="@drawable/like_btn_src"
+                            android:textColor="@color/like_text_color"
+                            android:drawablePadding="12dp"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"/>
+                        <TextView
+                            android:id="@+id/feedName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Narendar Modi"
+                            android:singleLine="true"
+                            android:textColor="@android:color/darker_gray"
+                            android:paddingStart="20dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:singleLine="true"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="16dp"/>
+
+                    <TextView
+                        android:id="@+id/feedDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:textSize="14sp"
+                        android:text="fewifewgfedfewfewf ewfhebwfh fefhbfhwef ewhfbhrbffhewfbhe"
+                        android:textColor="@android:color/black"/>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
